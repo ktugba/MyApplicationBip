@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Benim BiP</string>
+    <string name="bottom_nav_message">Messages</string>
+    <string name="bottom_nav_calls">Calls</string>
+    <string name="bottom_nav_discovery">Discovery</string>
+    <string name="bottom_nav_games">Games</string>
+    <string name="bottom_nav_profile">Profile</string>
+
+</resources>
