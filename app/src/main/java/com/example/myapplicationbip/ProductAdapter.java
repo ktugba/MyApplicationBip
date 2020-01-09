@@ -16,17 +16,15 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.MyViewHo
 
 
     ArrayList<Product> mProductList;
-    LayoutInflater inflater;
 
-    public ProductAdapter(Context context, ArrayList<Product> products) {
-        inflater = LayoutInflater.from(context);
+    public ProductAdapter( ArrayList<Product> products) {
         this.mProductList = products;
     }
 
     @NonNull
     @Override
     public ProductAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = inflater.inflate(R.layout.product_card, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.product_card, parent, false);
         MyViewHolder holder = new MyViewHolder(view);
         return holder;
     }
